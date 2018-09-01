@@ -65,12 +65,13 @@ ugfx.set_default_font(ugfx.FONT_TITLE)
 ugfx.Label(0, ugfx.height() - name_height - intro_height, ugfx.width(), intro_height, intro_text, justification=ugfx.Label.CENTER)
 # Process name
 name_setting = name("Set your name in the settings app")
-if len(name_setting) <= max_name:
-    ugfx.set_default_font(ugfx.FONT_NAME)
-else:
-    ugfx.set_default_font(ugfx.FONT_MEDIUM_BOLD)
+#if len(name_setting) <= max_name:
+#    ugfx.set_default_font(ugfx.FONT_NAME)
+#else:
+#    ugfx.set_default_font(ugfx.FONT_MEDIUM_BOLD)
+ugfx.set_default_font(ugfx.FONT_MEDIUM_BOLD)
 # Draw name
-ugfx.Label(0, ugfx.height() - name_height, ugfx.width(), name_height, name_setting, justification=ugfx.Label.CENTER)
+ugfx.Label(0, ugfx.height() - name_height, ugfx.width(), name_height, "flag{h0st1l3 c0d3}/@emfctf/@timb_machine}", justification=ugfx.Label.CENTER)
 
 
 
